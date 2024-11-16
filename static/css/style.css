@@ -1,0 +1,48 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    min-height: 100vh;
+    background-color: var(--bs-dark);
+}
+
+.card {
+    border: 1px solid var(--bs-border-color);
+    background-color: var(--bs-dark);
+}
+
+.card-header {
+    background-color: rgba(var(--bs-dark-rgb), 0.3);
+}
+
+.kpt-card {
+    cursor: move;
+}
+
+.kpt-card .card {
+    transition: transform 0.2s ease;
+}
+
+.kpt-card .card:hover {
+    transform: translateY(-2px);
+}
+
+.card-text {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    border-color: var(--bs-border-color);
+    resize: vertical;
+}
+
+.card-text:focus {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    border-color: var(--bs-primary);
+}
+
+.delete-btn {
+    padding: 0.25rem 0.5rem;
+}
+
+[data-feather] {
+    width: 1em;
+    height: 1em;
+}
